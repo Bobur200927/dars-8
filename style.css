@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Vazifa */
+
+/* ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: blue;
+}
+
+ul li{
+    list-style-type: none;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.drop-li{
+    position: relative;
+}
+
+.drop-container{
+    position: absolute;
+    background-color: red;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: none;
+}
+
+.drop-li:hover .drop-container {
+    display: block;
+}
+
+.header{
+    position: relative;
+}
+
+.head{
+    position: absolute;
+    background-color: aqua;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: none;
+
+}
+
+.header:hover .head{
+    display: block;
+} */
+
+/* Dars */
+
+/* ? PseudoElements */
+
+h2{
+    /* display: inline; */
+}
+
+h2::first-letter{
+    color: red;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h2::first-line{
+    color: blue;
+    word-spacing: 20px;
+}
+
+h3{
+    margin-top: 50px;
+    font-size: 30px;
+    position: relative;
+}
+
+h3::before{
+    /* content: "before an element"; */
+    /* content: url(assets/19\ sf90.webp); */
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+}
+
+h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 5px;
+    bottom: -20px;
+    background-color: red;
+}
+
+.selection::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+body{
+    margin: 100px;
+}
+
+ul li::marker{
+    color: red;
+    font-size: 30px;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+    /* position: fixed; */
+    top: 200px;
+    transition: all .4s ease;
+    margin: 20px;
+}
+
+.img-container{
+    background-color: red;
+    width: 400px;
+    height: 300px;
+    position: fixed;
+    opacity: .5;
+    top: 200px;
+    left: 200px;
+}
